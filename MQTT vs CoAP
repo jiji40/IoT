@@ -1,0 +1,11 @@
+MQTT                                                        CaAP
+Prococol de cuminicare unul la multi                        Porotcol de comunicare unul la unul (pentru UDP este multicat)
+Decuplarea producătorilor și consumatorului                 Transferul informațiilor de stare între client și server
+Centrat pe date                                             Centrat pe documente
+Se descurcă cel mai bine ca magistrală de comunicație       Cel mai potrivit pentru un model de transfer de stat, 
+  pentru date live                                              nu doar bazat pe evenimente
+Clienții realizează o conexiune TCP de lungă durată         Clienții și serverele trimit și primesc pachete UDP
+Nicio problemă în spatele NAT                               Tunnelarea sau Port Forwarding pot fi folosite pentru a permite CoAP în NAT (IPv4). Cu IPv6 nicio problemă.
+Toți clienții trebuie sa cunoasca formatul mesajului        Oferă suport încorporat pentru negocierea conținutului (ACCEPT) și descoperire (listă), 
+     în avans pentru a permite comunicarea                      permițând dispozitivelor să găsească o modalitate de schimb de date.
+ 3 nivele ale QoS                                           Mecanismele de fiabilitate se bazează pe mesaje NON/CON.
