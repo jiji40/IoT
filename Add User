@@ -1,0 +1,10 @@
+Following API will show you how to add new user in the list. Following is the detail of the new user −
+
+user = {
+   "user4" : {
+      "name" : "mohit",
+      "password" : "password4",
+      "profession" : "teacher",
+      "id": 4
+   }
+}
