@@ -1,0 +1,38 @@
+Data Protocols
+IoT Communications Protocols HTTP-REST, CoAP, MQTT
+
+REST = REpresentational State Transfer
+
+Se bazează pe un protocol de comunicare, client-server, stocabil în cache
+În loc să utilizeze mecanisme complexe de conectare între mașini, HTTP simplu este folosit pentru a efectua apeluri între mașini
+Aplicațiile RESTful folosesc solicitări HTTP pentru a posta date (crea și/sau actualiza)
+Astfel, REST folosește HTTP pentru toate cele patru CRUD (Create/Read/Update/Delete) operațiuni.
+REST nu este un protocol și nici un standard, ci un STIL ARHITECTURAL
+
+Request
+  Method 
+    GET /music/artists/beatles/recordings HTTP/1.1
+      Response
+    HTTP/1.1 200 OK
+    
+ CRUD Operations on resource
+  POST - Create
+  GET - Read
+  PUT - Update
+  DELETE - Delete
+ ***********************************************************************************
+ CoAP = Client/server arhitectura (Implementat si pe client si pe server, raspuns asincron)
+ 
+Caracteristici
+protocol de transfer web încorporat
+model de tranzacție asincronă
+Transport UDP cu fiabilitate și suport multicast
+Metodele GET, POST, PUT, DELETE
+Antet mic, simplu de 4 octeți
+DTLS se bazează pe PSK, RPK și securitatea certificatelor
+Subrețea de tipuri MIME și coduri de răspuns HTTP
+Descoperire încorporată
+Observație opțională și transfer în bloc
+ 
+ CoAP este totuși un protocol unic, cu mesaje tip cerere/răspuns in headerul CoAP
+  
