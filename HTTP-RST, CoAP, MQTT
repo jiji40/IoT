@@ -20,9 +20,9 @@ Request
   GET - Read
   PUT - Update
   DELETE - Delete
- ***********************************************************************************
+***********************************************************************************
  CoAP = Client/server arhitectura (Implementat si pe client si pe server, raspuns asincron)
- 
+Default protocol UDP 5683
 Caracteristici
 protocol de transfer web încorporat
 model de tranzacție asincronă
@@ -35,4 +35,16 @@ Descoperire încorporată
 Observație opțională și transfer în bloc
  
  CoAP este totuși un protocol unic, cu mesaje tip cerere/răspuns in headerul CoAP
-  
+ **********************************************************************************
+ MQTT = Message Queueing Telemetry Transport
+ Default protocol TCP 1883
+ 
+ Caracteristici
+Distribuția de mesagerie una la mai multe, aplicațiile care decuplează 
+Comunicare asincronă
+3 niveluri QoS: cel mult o dată, cel puțin o dată, exact o dată
+Costuri mici de transport, schimburi minime de mesaje
+Protocol simplu, care vizează implementări de complexitate redusa, putere redusă și amprentă redusă
+Tulează pe transport orientat pe conexiune (TCP)
+Mecanism pentru a indica celeilalte părți o deconectare anormală 
+ 
